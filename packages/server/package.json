@@ -24,9 +24,13 @@
     "coverage": "vitest --coverage"
   },
   "dependencies": {
+    "@beeman-playground/domain": "workspace:^",
+    "@effect/opentelemetry": "^0.56.2",
     "@effect/platform": "latest",
     "@effect/platform-node": "latest",
-    "@beeman-playground/domain": "workspace:^",
+    "@opentelemetry/exporter-trace-otlp-http": "^0.203.0",
+    "@opentelemetry/sdk-trace-base": "^2.0.1",
+    "@opentelemetry/sdk-trace-node": "^2.0.1",
     "effect": "latest"
   },
   "effect": {
