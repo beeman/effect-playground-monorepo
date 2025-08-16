@@ -17,6 +17,10 @@
     "dev:server": "tsx ./packages/server/src/server.ts",
     "lint": "eslint \"**/{src,test,examples,scripts,dtslint}/**/*.{ts,mjs}\"",
     "lint-fix": "pnpm lint --fix",
+    "services": "docker compose -f ./compose.yml",
+    "services:down": "pnpm services down",
+    "services:logs": "pnpm services logs -f",
+    "services:up": "pnpm services up -d",
     "test": "vitest"
   },
   "devDependencies": {
