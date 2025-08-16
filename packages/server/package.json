@@ -1,12 +1,12 @@
 {
-  "name": "@template/server",
+  "name": "@beeman-playground/server",
   "version": "0.0.0",
   "type": "module",
   "license": "MIT",
   "description": "The server template",
   "repository": {
     "type": "git",
-    "url": "<PLACEHOLDER>",
+    "url": "beeman/effect-playground-monorepo",
     "directory": "packages/server"
   },
   "scripts": {
@@ -22,7 +22,7 @@
   "dependencies": {
     "@effect/platform": "latest",
     "@effect/platform-node": "latest",
-    "@template/domain": "workspace:^",
+    "@beeman-playground/domain": "workspace:^",
     "effect": "latest"
   },
   "effect": {

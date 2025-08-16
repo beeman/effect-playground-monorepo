@@ -1,12 +1,12 @@
 {
-  "name": "@template/domain",
+  "name": "@beeman-playground/domain",
   "version": "0.0.0",
   "type": "module",
   "license": "MIT",
   "description": "The domain template",
   "repository": {
     "type": "git",
-    "url": "<PLACEHOLDER>",
+    "url": "beeman/effect-playground-monorepo",
     "directory": "packages/domain"
   },
   "publishConfig": {

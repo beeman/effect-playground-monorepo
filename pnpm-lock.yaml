@@ -106,6 +106,9 @@ importers:
 
   packages/cli:
     dependencies:
+      '@beeman-playground/domain':
+        specifier: workspace:^
+        version: link:../domain/dist
       '@effect/cli':
         specifier: latest
         version: 0.69.0(@effect/platform@0.90.3(effect@3.17.7))(@effect/printer-ansi@0.45.0(@effect/typeclass@0.36.0(effect@3.17.7))(effect@3.17.7))(@effect/printer@0.45.0(@effect/typeclass@0.36.0(effect@3.17.7))(effect@3.17.7))(effect@3.17.7)
@@ -115,9 +118,6 @@ importers:
       '@effect/platform-node':
         specifier: latest
         version: 0.96.0(@effect/cluster@0.48.0(@effect/platform@0.90.3(effect@3.17.7))(@effect/rpc@0.69.0(@effect/platform@0.90.3(effect@3.17.7))(effect@3.17.7))(@effect/sql@0.44.1(@effect/experimental@0.54.6(@effect/platform@0.90.3(effect@3.17.7))(effect@3.17.7))(@effect/platform@0.90.3(effect@3.17.7))(effect@3.17.7))(@effect/workflow@0.9.0(@effect/platform@0.90.3(effect@3.17.7))(@effect/rpc@0.69.0(@effect/platform@0.90.3(effect@3.17.7))(effect@3.17.7))(effect@3.17.7))(effect@3.17.7))(@effect/platform@0.90.3(effect@3.17.7))(@effect/rpc@0.69.0(@effect/platform@0.90.3(effect@3.17.7))(effect@3.17.7))(@effect/sql@0.44.1(@effect/experimental@0.54.6(@effect/platform@0.90.3(effect@3.17.7))(effect@3.17.7))(@effect/platform@0.90.3(effect@3.17.7))(effect@3.17.7))(effect@3.17.7)
-      '@template/domain':
-        specifier: workspace:^
-        version: link:../domain/dist
       effect:
         specifier: latest
         version: 3.17.7
@@ -138,15 +138,15 @@ importers:
 
   packages/server:
     dependencies:
+      '@beeman-playground/domain':
+        specifier: workspace:^
+        version: link:../domain/dist
       '@effect/platform':
         specifier: latest
         version: 0.90.3(effect@3.17.7)
       '@effect/platform-node':
         specifier: latest
         version: 0.96.0(@effect/cluster@0.48.0(@effect/platform@0.90.3(effect@3.17.7))(@effect/rpc@0.69.0(@effect/platform@0.90.3(effect@3.17.7))(effect@3.17.7))(@effect/sql@0.44.1(@effect/experimental@0.54.6(@effect/platform@0.90.3(effect@3.17.7))(effect@3.17.7))(@effect/platform@0.90.3(effect@3.17.7))(effect@3.17.7))(@effect/workflow@0.9.0(@effect/platform@0.90.3(effect@3.17.7))(@effect/rpc@0.69.0(@effect/platform@0.90.3(effect@3.17.7))(effect@3.17.7))(effect@3.17.7))(effect@3.17.7))(@effect/platform@0.90.3(effect@3.17.7))(@effect/rpc@0.69.0(@effect/platform@0.90.3(effect@3.17.7))(effect@3.17.7))(@effect/sql@0.44.1(@effect/experimental@0.54.6(@effect/platform@0.90.3(effect@3.17.7))(effect@3.17.7))(@effect/platform@0.90.3(effect@3.17.7))(effect@3.17.7))(effect@3.17.7)
-      '@template/domain':
-        specifier: workspace:^
-        version: link:../domain/dist
       effect:
         specifier: latest
         version: 3.17.7
