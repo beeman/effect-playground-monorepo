@@ -19,7 +19,10 @@ export class TodoNotFound extends Schema.TaggedError<TodoNotFound>()("TodoNotFou
 }) {}
 
 export class TodosApiGroup extends HttpApiGroup.make("todos")
-  .add(HttpApiEndpoint.get("getAllTodos", "/todos").addSuccess(Schema.Array(Todo)))
+  .add(
+    HttpApiEndpoint.get("getAllTodos", "/todos")
+      .addSuccess(Schema.Array(Todo))
+  )
   .add(
     HttpApiEndpoint.get("getTodoById", "/todos/:id")
       .addSuccess(Todo)
