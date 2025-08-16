@@ -1,0 +1,12 @@
+name: beeman-playground
+
+services:
+  jaeger:
+    container_name: jaeger
+    image: cr.jaegertracing.io/jaegertracing/jaeger:2.9.0
+    ports:
+      - '4317:4317'
+      - '4318:4318'
+      - '5778:5778'
+      - '9411:9411'
+      - '16686:16686'
