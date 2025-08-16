@@ -150,6 +150,7 @@ importers:
       effect:
         specifier: latest
         version: 3.17.7
+    publishDirectory: dist
 
 packages:
 
